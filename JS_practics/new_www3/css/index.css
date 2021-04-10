@@ -1,0 +1,20 @@
+h1.text-content {
+    height: 1em;
+    position: relative;
+    background-color: rebeccapurple;
+    padding-left: 350px;
+}
+
+h2.text-content{
+    margin: 0;
+    background-color: yellow;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.input-in {
+position: relative;
+}
