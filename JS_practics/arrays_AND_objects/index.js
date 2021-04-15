@@ -1,3 +1,53 @@
+// let arr = ['a', 'b', 'c']
+//
+//
+// console.log(arr.[0])
+// console.log(arr[1])
+// console.log(arr[2])
+
+
+// let arr2 = ['a', 'b', 'c', 'd']
+//
+//
+// console.log(`${arr2[0]} + ${arr2[1]} + ${arr2[2]} + ${arr2[3]}`)
+//
+//
+// let arr = [2, 5, 3, 9];
+//
+// let result = (arr[0] * arr[1]) + (arr[2] * arr[3])
+//
+//
+// console.log(result)
+
+
+// let arr3 = ['BMW', 'MERSEDES' , 'Skoda' , 'KIA'];
+//
+// console.log(arr3[arr3.length -4])
+//
+// let array = ['tarakan', 'bags', 'Bee', 'dog']
+//
+//
+// console.log(array[array.length -2]);
+
+
+
+
+// let array2 = ['123123', 123123 , 4234324 , 23423423]
+//
+// let res = array2[1] * array2[2]
+//
+// console.log(res)
+//
+//
+// console.log(array2[array2.length - 1])
+
+// console.log( Array.isArray([1, 2, 3]) )
+// console.log( Array.isArray({a: 1, b: 2, c: 3}) );
+// let arr = [1, 2, 3];
+// console.log( typeof arr )
+// let arr = ['1', '2', '3'];
+// console.log( typeof arr[0] );
+
 // var dog = { nameDog: "Оладушек", ageDog: 6, colorDog: "белый",
 // bark: "Гав тяф тяф!" };
 
@@ -147,13 +197,13 @@
 
 // ___________________________________________________________________________
 
-// let perants = [1 :'kaskader', 'turist', 'jovidon', 'dilafruz'];
+// let parents = [1 :'kaskader', 'turist', 'jovidon', 'dilafruz'];
 
-// // console.log(perants.length) // у нас 4 объекта
-// // console.log(perants[0].length) // 8 букв в 0-ом объекте массива
-// // console.log(perants[0]); // значение 0 объекта в массива 
+// // console.log(parents.length) // у нас 4 объекта
+// // console.log(parents[0].length) // 8 букв в 0-ом объекте массива
+// // console.log(parents[0]); // значение 0 объекта в массива
 
-// console.log(perants[perants[0].length -1])
+// console.log(parents[parents[0].length -1])
 
 
 
@@ -268,14 +318,62 @@
 // arr1[0] = 'a';
 // console.log(arr2); // [ 'a', 2, 3 ]
 
+//
+// let arr1 = [1, 2, 3];
+// let arr2 = arr1;
+//
+// arr1[0] = 'a';
+// arr2[0] = 'b';
+//
+// console.log(arr2);
 
 
+// let name1 = {'Iska': 2014, 'Jovid':  2016, Ilyas: 1985}
+//
+// // name1.unshift('front')
+// // name1.push('end')
+// //
+// //
+// // name1.shift()
+// // name1.pop()
+// // name1.pop()
+//
+// // name1.pop()
+// // name1.shift()
+//
+// console.log(name1['Iska'])
 
 
-let arr = [1, 2, 3];
-console.log( typeof arr[0] );
+// let obj = {key1: 1, key2: 2, key3: 3};
+//
+// console.log(obj.key1 + obj.key2 + obj.key3)
+//
+// let user = {'name' : 'Ilyas', 'surname': 'Mirzaaliev', 'patronymic' : 'Makhmudovich'};
+//
+//
+// console.log(user.surname, user.name, user.patronymic)
 
+// console.log( typeof {a: 1, b: 2, c: 3} );   // выведет object
+// console.log( typeof [1, 2, 3] );             // выведет object
 
-console.log( Array.isArray([1, 2, 3]) );
+// let arr = [1, 2, 3];
+// console.log( typeof arr );               // выведет object
 
-console.log( Array.isArray({a: 1, b: 2, c: 3}) );
+// let arr = [1, 2, 3];
+// console.log( typeof arr[0] );             // выведет number
+
+// let arr = ['1', '2', '3'];
+// console.log( typeof arr[0] );               // выведет string
+
+// Как определить массив ли объект
+// Как было указано выше, оператор typeof не позволяет различать массивы и объекты.
+// Иногда, однако, это необходимо сделать.
+//
+// На помощь придет функция Array.isArray():
+
+// console.log( Array.isArray([]) );       // выведет true
+// console.log( Array.isArray({}) );       // выведет false
+
+// console.log( Array.isArray([1, 2, 3]) ); // выведет true
+
+// console.log( Array.isArray({a: 1, b: 2, c: 3}) );   // выведет false
