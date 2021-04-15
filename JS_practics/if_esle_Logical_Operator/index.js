@@ -890,15 +890,34 @@ console.log(result); // выведет '!'*/
 //     alert('нет такого веремени года')
 // }
 
-let str = 'abcde'
+/*Тернарный оператор if-else*/
 
-// console.log(str[0])
-
-
-if (str[0] == 'abcde') {
-    console.log('ok')
-}else {
-    console.log('no')
-}
+let age = 17;
+console.log( age >= 18 ? true: false );
+/*Или*/
+(age >= 18) ? console.log('YES'): console.log('NO')
+/*Тернарный оператор следует использовать только в самых простых случаях,
+так как его использование затрудняет понимание кода.*/
 
 
+
+                            /*Логические операции в JavaScript*/
+
+/*      console.log(1 == 1); // выведет true
+        console.log(1 == 2); // выведет false
+
+Исходя из написанного, код из начала урока можно переписать более простым образом:
+
+let a = 1;
+let b = 2;
+
+console.log(a == b);
+Можно не выводить результат сразу в консоль, а присвоить его какой-нибудь переменной:
+
+    let a = 1;
+let b = 2;
+
+let result = a == b;
+console.log(result);
+
+*/
