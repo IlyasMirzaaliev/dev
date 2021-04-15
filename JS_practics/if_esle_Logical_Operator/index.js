@@ -892,10 +892,10 @@ console.log(result); // выведет '!'*/
 
 /*Тернарный оператор if-else*/
 
-let age = 17;
-console.log( age >= 18 ? true: false );
-/*Или*/
-(age >= 18) ? console.log('YES'): console.log('NO')
+// let age = 17;
+// console.log( age >= 18 ? true: false );
+// /*Или*/
+// (age >= 18) ? console.log('YES'): console.log('NO')
 /*Тернарный оператор следует использовать только в самых простых случаях,
 так как его использование затрудняет понимание кода.*/
 
@@ -914,10 +914,36 @@ let b = 2;
 console.log(a == b);
 Можно не выводить результат сразу в консоль, а присвоить его какой-нибудь переменной:
 
-    let a = 1;
+
+let a = 1;
 let b = 2;
 
 let result = a == b;
 console.log(result);
 
 */
+
+/*Задача 33.1*/
+
+// let a = 2 * (3 - 1);
+// let b = 6 - 2;
+// let res = a >= b;
+//
+// console.log(res)
+// console.log(a == b)
+
+
+let sum = 5 * (7 - 4);
+let sum2 = 1 + 2 +7;
+let result = sum > sum2;
+
+console.log(result)
+console.log(sum > sum2);
+
+let num1 = 2 ** 4;
+let num2 = 4 ** 2;
+
+let total = num1 != num2;
+
+console.log(total);
+console.log(num1 != num2);
