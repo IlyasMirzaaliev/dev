@@ -823,10 +823,10 @@ console.log(result); // выведет '!'*/
                                     /*Остаток от деления*/
 
 /*Давайте напишем скрипт, который будет проверять, делится ли нацело одно число на второе:*/
-// let a = 10;
-// let b = 5;
+// let i = 10;
+// let k = 5;
 //
-// if (a % b == 0) {
+// if (i % k == 0) {
 //     console.log('делится нацело')
 // }else {
 //     console.log('делится с остатком')
@@ -834,11 +834,71 @@ console.log(result); // выведет '!'*/
 
 
 /*Пусть теперь требуется, если число делится с остатком, вывести этот остаток на экран:*/
-let i = 10;
-let k = 3;
+// let a = 10;
+// let b = 3;
 
-if (i % k == 0) {
-    console.log('делится нацело')
+// if (a % b == 0) {
+//     console.log('делится нацело')
+// }else {
+//     console.log('делится с остатком ' + a % b)
+// }
+
+/*В приведенном выше коде получается, что остаток вычисляется в двух местах, а это не оптимально.
+Поправим проблему:*/
+ // let rest = a % b;
+ //
+ // if (rest == 0) {
+ //     console.log('делится нацело')
+ // }else {
+ //     console.log('делится с остатком ' + rest)
+ // }
+
+
+//
+// let i = 57
+// let k = 17
+// let result = i % k ;
+//
+//  if (result == 0) {
+//      console.log('дделится нацело ')
+//  }else {
+//      console.log('делится с остатком ' + result)
+//  }
+//
+// let num1 = 52174;
+// let num2 = 20
+// let total = num1 % num2
+//
+// console.log('остаток ' +total)
+
+
+/*Практика на условия if-else в JavaScript*/
+
+// let month = prompt("Введите номер месяца");
+//
+// if (month >= 1 && month <=2) {
+//     alert('Зима');
+// }else if (month >= 3 && month <= 5) {
+//     alert('Весна');
+// }else if (month >= 6 && month <= 8) {
+//     alert('Лето')
+// }else if (month >= 9 && month <= 11) {
+//     alert('Осень')
+// }else if (month == 12){
+//     alert('Зима')
+// }else {
+//     alert('нет такого веремени года')
+// }
+
+let str = 'abcde'
+
+// console.log(str[0])
+
+
+if (str[0] == 'abcde') {
+    console.log('ok')
 }else {
-    console.log('делится с остатком ' + i % k)
+    console.log('no')
 }
+
+
