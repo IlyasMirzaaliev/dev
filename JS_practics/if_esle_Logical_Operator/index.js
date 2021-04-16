@@ -933,17 +933,3 @@ console.log(result);
 // console.log(a == b)
 
 
-let sum = 5 * (7 - 4);
-let sum2 = 1 + 2 +7;
-let result = sum > sum2;
-
-console.log(result)
-console.log(sum > sum2);
-
-let num1 = 2 ** 4;
-let num2 = 4 ** 2;
-
-let total = num1 != num2;
-
-console.log(total);
-console.log(num1 != num2);
