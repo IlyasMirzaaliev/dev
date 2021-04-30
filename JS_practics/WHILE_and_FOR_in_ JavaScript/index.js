@@ -1,6 +1,4 @@
-
-
-/ *Цикл while в JavaScript* /
+/ *Цикл while в JavaScript* /;
 
 /*Циклы используются для того, чтобы некоторый участок кода выполнился несколько раз подряд.
 Но это не нужно - у нас есть возможность сделать так, чтобы JavaScript за нас выполнил некоторую операцию нужное количество раз.
@@ -12,7 +10,6 @@ while (i <= 5) {
 	console.log(i); // выводим содержимое i в консоль
 	i++; // увеличиваем i на единицу при каждом проходе цикла
 }*/
-
 
 /*Задача 35.1 Выведите в консоль числа от 1 до 100. */
 
@@ -85,7 +82,6 @@ while (i <= 5) {
 //     console.log(i)
 // }
 
-
 /*Задача 37.4 С помощью цикла for выведите в консоль нечетные числа в промежутке от 1 до 99.*/
 
 // for (i = 1; i <= 99; i+=2) {
@@ -107,11 +103,9 @@ while (i <= 5) {
 //     console.log(i)
 // }
 
-
 /*__________________________________________________________________________________________________*/
 
-                        /*Накопление результата в цикле JavaScript*/
-
+/*Накопление результата в цикле JavaScript*/
 
 // let result = 0;
 //
@@ -121,7 +115,6 @@ while (i <= 5) {
 // }
 //
 // console.log(result); // искомая сумма 5050
-
 
 /*Задача 38.1 Найдите произведение целых чисел от 1 до 20.*/
 
@@ -150,7 +143,7 @@ while (i <= 5) {
 //     console.log(i)
 // }
 
-                            /*Цикл for для массивов в JavaScript*/
+/*Цикл for для массивов в JavaScript*/
 
 // let arr = [1, 2, 3, 4, 5];
 //
@@ -167,7 +160,6 @@ while (i <= 5) {
 //     console.log(arr2[i])
 //
 // }
-
 
 /*                                          Перебор массива и if
 Внутри цикла for можно использовать условие if.
@@ -191,9 +183,6 @@ while (i <= 5) {
 //     }
 // }
 
-
-
-
 /*Нахождение суммы элементов*/
 //
 // let result = 0;
@@ -205,12 +194,10 @@ while (i <= 5) {
 //
 // console.log(result);
 
-
 /*Задача 39.6
 Дан массив с элементами 2, 5, 9, 15, 1, 4.
 С помощью цикла for и оператора if выведите в консоль те элементы массива,
 которые больше 3-х, но меньше 10.   */
-
 
 // let arr = [2, 5, 9, 15, 1, 4]
 //
@@ -251,13 +238,10 @@ for ( начальные команды; условие окончания
     }
 */
 
-
-
 /* ========================== Перебор массива циклом for-of в JavaScript=================================
 
 * В ES6 появился новый цикл for-of, предназначенный конкретно для перебора массивов.
 * Он имеет следующий синтаксис:  */
-
 
 // let arr = [1, 2, 3, 4, 5];
 //
@@ -265,17 +249,57 @@ for ( начальные команды; условие окончания
 //     console.log(elem); // вывод  1, 2, 3, 4, 5,
 // }
 
+// let array = [2, 5, 9, 15, 1, 4]
+
+// for (const elem of array) {
+//     if (elem > 3 && elem < 10) {
+//         console.log(elem);
+//     }
+// }
+
+// let arr = [1, 2, 3, 4, 5, -5, -4, -3, -2, -1];
+// let result = 0;
+
+// for (const elem1 of arr) {
+//     if (elem1 > 0 ) {
+//         result += elem1
+//     }
+// };
+// console.log(result);
+
+// let array = [1, 2, 3, 4, 5];
+// let res = 0;
+
+// for (const elem of array) {
+//     res += elem / 5
+// }
+// console.log(res);
+
+// let arr = [1, 2, 6, 3, 8, 0, 6];
+
+// for (const elem of arr) {
+//     if (elem == arr) {
+//         console.log(elem(arr));
+//     }
+// }
+
 /*Задача 40.1 Дан массив с элементами 'a', 'b', 'c', 'd', 'e'.
 С помощью цикла for-of выведите все эти элементы на экран.*/
 
 // let arr = ['a', 'b', 'c', 'd', 'e'];
-//
-// for (let elem of arr) {
-//     console.log(elem)
+
+// for (let elemOfarr of arr) {
+//     console.log(elemOfarr)
+// }
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+
 // }
 
 /*Задача 40.2 Дан массив с элементами 1, 2, 3, 4, 5.
 С помощью цикла for-of найдите сумму элементов этого массива.*/
+
 // let res= 0;
 // let numArr = [1, 2, 3, 4, 5];
 //
@@ -301,9 +325,7 @@ for ( начальные команды; условие окончания
 //     console.log(elemM)
 // }
 
-
 /*=====================================================================================================*/
-
 
 /*Задача 40.4 Пусть у вас есть массив с названиями месяцев.
  Пусть в переменной month хранится номер текущего месяца, например, 10.
@@ -320,9 +342,7 @@ for ( начальные команды; условие окончания
 
 /*=====================================================================================================*/
 
-
 /*=================================Перебор объекта циклом for-in в JavaScript==========================*/
-
 
 /*В предыдущем уроке мы с вами изучали цикл for-of для перебора массива.
 Существует похожий цикл for-in, предназначенный для перебора объектов.
@@ -333,7 +353,6 @@ for (let переменнаяДляКлюча in объект) {
 }
 
 */
-
 
 // Давайте с помощью цикла for-in выведем ключи этого объекта:
 
@@ -371,7 +390,6 @@ for (let переменнаяДляКлюча in объект) {
 //
 // console.log(res)
 
-
 /*==================================Инструкция break в JavaScript====================================*/
 //
 // let arr = [1, 2, 3, 4, 5];
@@ -382,7 +400,6 @@ for (let переменнаяДляКлюча in объект) {
 //         break;
 //     }
 // }
-
 
 // let str = '1234567890'
 // for (let elem of str.toString()) {
@@ -426,9 +443,7 @@ for (let переменнаяДляКлюча in объект) {
 //     console.log(result); // выполнится, если делится на 2 или 3
 // }
 
-
 /*=====================================Работа с флагами в JavaScript===================================*/
-
 
 // let arr = [1, 2, 3, 4, 3, 5];
 //
@@ -483,7 +498,6 @@ for (let переменнаяДляКлюча in объект) {
 //     }
 // }
 
-
 // let arr = [1, 2, 3, 4, 5];
 //
 // for (let elem of arr) {
@@ -493,7 +507,6 @@ for (let переменнаяДляКлюча in объект) {
 //         console.log('нет'); // выведет на элементах 1, 2, 4, 5
 //     }
 // }
-
 
 // let arr = [1, 2, 3, 4, 5];
 // let flag = false;
@@ -528,23 +541,368 @@ for (let переменнаяДляКлюча in объект) {
 //     console.log('we have not')
 // }
 
-
 /*=================================Нахождение простых чисел на JavaScript=============================*/
 
-let arr = ['a', 'b', 'c', 'd', 'e'];
-let flag = false;
+// const array= [1, 2, 3, 4, 5]
+// let result = 0;
+// 3 > 1
+// // for (let i = 0; i < array.length; i++) {
+// //     result += array[i];
 
-for (let elem of arr) {
-  if (elem == 'f') {
-    flag = true;
-    break;
-  }
-}
+// // }
+// // console.log(result);
 
-if (flag === true) {
-  console.log('есть');
-} else {
-  console.log('нет');
-}
+// let res = 1;
 
-// prompt
+// for (let i = 0; i < array.length; i++) {
+//     res = array[i] * array[i];
+
+// }
+
+// console.log(res);
+
+// let num = [2, 5, 9, 15, 1, 4]
+
+// for (let i = 0; i < num.length; i++) {
+//     if (num[i] > 3 && num[i] < 10) {
+//         console.log(num[i]);
+//     }
+// }
+
+// const array = [1, 2, 3, 4, 5, -1, -2, -3, -4, -5 ];
+// let result = 0
+
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] > 0 ) {
+//         result += array[i];
+//     }
+// }
+// console.log(result);
+
+// for (let i = 0, j = 0; i <= 9; i++, j += 2) {
+// 	console.log(i, j);
+// }
+
+// const array = [1, 2, 3, 4, 5, 0, -1, -2, -3, -4, -5, 0]
+
+// for (elem of array) {
+//     if (elem == 3) {
+
+//         break
+//     }
+//     console.log('est');
+// }
+
+// for (let i = 0; i < array.length; i++) {
+//     if (array[i] == 3) {
+//         console.log('set');
+//         break
+//     }
+
+// }
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// for (let i = 0; i < arr.length; i++) {
+//     let result
+//     if (arr[i] % 2 == 0) {
+//         result = arr[i] * arr[i]
+//     } else if (arr[i] == 3) {
+//         result = arr[i] * arr[i] * arr[i]
+
+//     }
+
+//     console.log(result);
+// }
+
+// for (let elem of arr) {
+// 	let result;
+
+// 	if (elem % 2 == 0) {
+// 		result = elem * elem;
+// 	} else if (elem % 3 == 0) {
+// 		result = elem * elem * elem;
+// 	} else {
+// 		continue; // перейдем на новую итерацию цикла
+// 	}
+
+// 	console.log(result); // выполнится, если делится на 2 или 3
+// }
+
+// let num = 500;
+
+// while (num > 10) {
+// 	num = num / 2;
+// }
+
+// console.log(num)
+
+// let str = '';
+
+// for (let i = 0; i < 5; i++) {
+//     str = str + '0'
+
+// }
+
+// console.log(str);
+
+// let num = ''
+
+// for (let i = 1; i < 10; i++) {
+//     num = num + i
+
+// }
+// console.log(num);
+
+// let str  = '';
+
+// for (let i = 9 ; i > 0 ; i--) {
+//     str = str + i
+// }
+
+// console.log(str);
+
+// for (let i = 10; i < 1000; i++){
+//     let toStr = String(i)
+//     console.log(toStr(i));
+//     if (toStr[10] == 5 || toStr[10] == 5)  {
+//         console.log(i);
+//         continue
+//     }
+// }
+
+/*Задача 51.1
+
+Переберите циклом числа от 10 до 1000
+и выведите на экран те числа, сумма двух первых цифр которых равна 5.*/
+
+// for (let i = 1; i <= 1000; i++) {
+// 	let str = String(i); // преобразуем число в строку
+
+// 	if (str[0] == 5 || str[1] == 5) {
+// 		console.log(i);
+// 	}
+// }
+
+// for (let i = 10; i <= 1000; i++) {
+//     let str = String(i);
+//     if (+str[0] + +(str[1]) == 5) {
+//         console.log(i);
+//     }
+// }
+
+// for (let i = 10; i <= 1000; i++) {
+//     let str = toString(i);
+//     if ((parseInt(str[0]) + parseInt(str[1])) == 5) {
+//         console.log(i);
+//     }
+// }
+
+// for (let i = 10; i < 1000; i++) {
+//     let doStr = String(i);
+//     if (doStr[0] + +(doStr[1]) == 5) {
+//         console.log(i);
+//     }
+
+// }
+
+// for (let i = 0; i < 1000; i++) {
+//     let makeStr = String(i)
+//     if (Number(makeStr[0]) + Number(makeStr[1]) == 15)
+//         console.log(i);
+
+// }
+
+// console.log(60 * 60 * 24);
+
+// console.log(84600 * 365);
+
+// for (let i = 0; i < 1000; i++) {
+//     let doStr = String(i)
+//         if (Number(doStr[0]) + Number(doStr[1]) == 6) {
+//             console.log(i);
+//         }
+
+// }
+
+// let result = 0;
+
+// for (let i = 1; i <= 9; i++) {
+// 	result = result + i;
+// }
+
+// console.log(result);
+
+// let res = ''
+
+// for (let i = 0; i <= 9; i++) {
+//     res += i
+
+// }
+// console.log(res);
+
+// let result = '';
+
+// for (let i = 1; i <= 30; i++) {
+//     result += i
+
+// }
+// console.log(result);
+
+// let result = ''
+
+// for (let i = 1; i <= 3; i++) {
+//     for (let k = 1; k <= 3; k++) {
+//         result = result + ' ' + i + k
+
+//         // result = `${ result = i + k}`
+//     }
+// }
+
+// console.log(result);
+
+// let arr = '';
+
+// for (let i = 0; i <= 5; i++) {
+//         arr += '0'
+// }
+
+// console.log(arr);
+
+// let arr2 = '';
+
+// for (let i = 1; i < 10; i++) {
+//     arr2 +=  '-' + i
+// }
+
+// arr2 = arr2 + '-'
+// console.log(arr2);
+
+// let str = ''
+
+// for (let i = 0; i < 10; i++) {
+//     str += ` Ilyas${i}`
+//     str += i
+//     // str += ' Ilyas'
+// }
+
+// console.log(str);
+
+// for (let i = 10; i < 1000; i++) {
+//   let str = String(i);
+//   if (+str[0] + +str[1] == 5) {
+//     console.log(i);
+//   }
+// }
+
+// let result = " ";
+
+// for (let i = 1; i <= 30; i++) {
+//   result += i;
+// }
+
+// console.log(result);
+
+// let arr = []
+
+// for (let i = 0; i <= 5; i++) {
+//     arr[i] =  i + 1
+// }
+
+// console.log(arr);
+
+// let arr2 = [];
+
+// for (let i = 0; i < 100; i++) {
+//   arr2[i] = i + 1;
+// }
+
+// console.log(arr2);
+
+// let arr = []
+
+// for (let i = 2, k = 0; i <= 100; i+=1, k++) {
+//     arr[k] = i
+
+// }
+
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5];
+
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i] +=10
+// }
+
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i]--
+// }
+
+// let result = [];
+
+// for (let i = 1; i <= 10; i++) {
+//     result.push(` x `)
+// }
+// console.log(result);
+
+// str += ` Ilyas${i}`
+//     str += i
+
+// let arr = [ 2, 8, -6, 7, 9, -3, 1, 8, -9, 5 ];
+// let resultArray = []
+
+// for (const elem of arr) {
+//     if (elem > 0) {
+//         resultArray.push(elem)
+//     }
+// }
+
+// console.log(resultArray);
+
+// let array = [1, 2, 3, 4, 5];
+// let result = []
+
+// for (let i = array.length -1; i >= 0; i--) {
+//     result.push(array[i])
+// }
+// console.log(result);
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+// let res = []
+
+// for (let i = arr.length -1; i >-0;i -- ) {
+//     res.push(arr[i])
+// }
+
+// console.log(res)
+// let arr = []
+
+// for (let i = 1; i <= 5; i++) {
+// 	arr.push(i);
+
+// }
+
+// console.log(arr);
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// let result = []
+
+// for (let elem of arr) {
+// 	if (elem % 2 != 0) {
+// 		result.push(elem);
+// 	}
+// }
+
+// console.log(result);
+
+// console.log(a);
+// var a = 7
+// let b = 6
+// console.log(b);
+// let b = 6
+
+
+
