@@ -531,15 +531,20 @@ for (let переменнаяДляКлюча in объект) {
 
 /*=================================Нахождение простых чисел на JavaScript=============================*/
 
+let arr = ['a', 'b', 'c', 'd', 'e'];
+let flag = false;
 
-let num = 31;
-let flag = true;
-let i;
-
-for (let i = 10; i < num; i++) {
-    if (num % i == 0) {
-        flag = false
-        break;
-    }
+for (let elem of arr) {
+  if (elem == 'f') {
+    flag = true;
+    break;
+  }
 }
-console.log(false)
+
+if (flag === true) {
+  console.log('есть');
+} else {
+  console.log('нет');
+}
+
+// prompt
